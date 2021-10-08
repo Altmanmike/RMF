@@ -19,7 +19,7 @@
             RMF est en train de développer sa propre API.
         </h1>
         <h2>
-            Nous disposons dors-et-déjà d'une application mobile iOS et Android.
+            Nous disposons dors-et-déjà d'une application mobile iOS et Android à découvrir sur la page d'accueil du site RMF.
         </h2>
     </div>      
 

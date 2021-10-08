@@ -121,6 +121,11 @@ nav {
     --bs-gutter-x: 0;
 }*/
 
+#carouselExampleControls img {
+    width: 50%;
+    margin: auto;
+}
+
 /* SECTION PRESENT */
 
 #present {
