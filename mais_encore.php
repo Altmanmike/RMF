@@ -8,7 +8,7 @@
 
 <!-- MAIN -->
 <main>
-    
+        
     <div class="container-fluid text-center pb-5">
         <h2>
             Nous souhaitons faciliter l'accès à la formation professionnelle aux personnes handicapées.
