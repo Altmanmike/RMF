@@ -1,3 +1,3 @@
 # RMF
 epsi workshop - rmf
-voir troisieme commit dans la branche master 
+voir commit "site de promo de l'application rmf" dans la branche master 
