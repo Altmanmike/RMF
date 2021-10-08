@@ -1,0 +1,519 @@
+/****************************************/
+/***************** HTML *****************/
+/****************************************/
+
+html, body {
+    font-family: 'Roboto', sans-serif;    
+    /*font-size: 10px;*/
+    /*font-size: 62.5%;*/
+    min-height: 500px;
+    overflow-x: hidden;
+}
+
+html {
+    --scrollbarBG: white;
+    --thumbBG: #0974F1; /* genre de cyan */   
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 1px;
+    border: 4px solid var(--scrollbarBG);
+}
+
+a, h1, h2, h3, h4, h5, .navbar>.container-fluid {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    transition: all 0.3s cubic-bezier(0.69, 0.43, 0.43, 0.65);
+}
+
+a:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+    color: white;
+    text-shadow:  1px 1px 2px grey;    
+    transition: all 0.3s cubic-bezier(0.69, 0.43, 0.43, 0.65); 
+}
+a, a:hover {
+    text-decoration: none;
+}
+#navbarNav > ul > li > a, footer .btn-night {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    transition: all 0.3s cubic-bezier(0.69, 0.43, 0.43, 0.65);
+}
+
+a.navbar-light.navbar-brand {
+    color: white;
+    text-shadow:  1px 1px 2px black; 
+}
+
+ #navbarNav > ul > li > a:hover, footer .btn-night:hover {
+    text-shadow: 2px 2px 5px grey;    
+    transition: all 0.3s cubic-bezier(0.69, 0.43, 0.43, 0.65);
+}
+
+#navbarNav > ul > li.nav-item.mx-1 > a {    
+    text-decoration: none; 
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    transition: all 0.3s cubic-bezier(0.69, 0.43, 0.43, 0.65); 
+}
+
+#navbarNav > ul > li.nav-item.mx-1 > a:hover {    
+    text-shadow: 2px 2px 5px grey;
+    transition: all 0.3s cubic-bezier(0.69, 0.43, 0.43, 0.65); 
+}
+
+#scrollUp
+{
+    position: fixed;
+    bottom : 10px;
+    right: -100px;
+    opacity: 0.8;
+    z-index: 8;
+}
+
+#scrollUp img {
+    width: 50px;    
+}
+
+
+
+/****************************************/
+/**************** HEADER ****************/
+/****************************************/
+
+nav {
+    background: hsla(212, 100%, 77%, 1);
+    background: linear-gradient(270deg, hsla(212, 100%, 77%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);    
+    background: -moz-linear-gradient(270deg, hsla(212, 100%, 77%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);    
+    background: -webkit-linear-gradient(270deg, hsla(212, 100%, 77%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#89C0FF", endColorstr="#0974f1", GradientType=1 );
+}
+
+/* HEADER ET SECTION */
+
+#header-page {
+    height: 600px;
+    background-color: white;
+}
+
+
+/****************************************/
+/************** index page **************/
+/****************************************/
+
+/* section#styles div.row {
+    --bs-gutter-x: 0;
+}*/
+
+/* SECTION PRESENT */
+
+#present {
+    background: dimgray;
+}
+
+/* SECTION ID1 */
+
+section#id1 {
+    background: white;
+}
+
+
+/* SECTION ID 2 */
+
+section#id2 { 
+    background: grey;
+}
+
+/****************************************/
+/*********** connexion page *************/
+/****************************************/
+
+/* SECTION CONNEXION */
+
+/* formulaire */
+
+section#connexion div.connexion {
+    height: 729px;
+    width: 100%;    
+}
+
+section#connexion div.connexion {
+    filter: drop-shadow(12px 12px 24px rgba(0, 0, 0, 0.25));
+}
+
+section#connexion div.row {
+    --bs-gutter-x: 0!important;
+    /*margin-bottom: 1.5rem;*/ 
+    margin-bottom: 0.5rem;
+}
+
+section#connexion div.connexion-left {
+    width: 536px;
+    background: #0B85FC;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;    
+}
+
+section#connexion div.connexion-left h1.connexion-left-title {
+    color: white!important;
+    /*padding: 1.5rem 2rem!important;*/ 
+    padding: 3rem 2rem!important;
+}
+
+section#connexion div.connexion-right {
+    width: 744px;
+    padding: 9.75rem 2rem 4rem;
+    background: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;    
+}
+
+p.connexion-description {    
+    padding: 0px 1.5rem;
+    /*margin: -1rem 0;*/
+    margin: -6.5rem 0;
+    color: white;    
+    font-family: Roboto;
+    /*font-size: 18px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+div.connexion-image {
+    width: 217px;
+    height: 217px;
+    margin: 4rem auto 0;
+    /*background: url(../img/xxxx.png);*/   
+    /*background-color: #0B85FC;*/
+}
+
+section#connexion div.connexion div.connexion-right form {
+   /* margin: -3rem 0; */
+    margin: -2.5rem 0;
+}
+
+#prenom::placeholder, #nom::placeholder, #mail::placeholder, #telephone::placeholder, #adresse::placeholder, #codepostal::placeholder, #ville::placeholder, #password::placeholder, #confirm_password::placeholder {
+    color: #0B85FC;
+}
+
+section#connexion div.connexion div.connexion-right form input.form-control, section#connexion div.connexion div.connexion-right form div.form-control  {
+    color: #0B85FC!important;
+    width: 315px;
+    height: 80px;
+    border: 2px solid #0B85FC;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0px 0.555rem;
+}
+
+section#connexion div.connexion div.connexion-right form input.form-control.mail {
+    width: 650px;
+}
+
+section#connexion div.connexion div.connexion-right form div div.oeil-icone img{
+    margin: -3.5em 33em;
+}
+
+section#connexion div.connexion div.connexion-right form input.form-control.password {
+    width: 650px;
+}
+
+section#connexion a.btn-oublie {
+    color: #0B85FC;
+    font-family: Roboto;
+    text-shadow: 1px 1px 2px black;
+   /* font-size: 18px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+section#connexion input.custom-control-input {
+    color: #0B85FC!important;
+    background-color: #0B85FC!important;
+    border: 2px solid #0B85FC!important;
+   /* box-sizing: border-box;*/
+    border-radius: 5px;    
+    margin-top: 0.5rem;
+    margin-left: 1rem;    
+}
+
+section#connexion label.custom-control-label {
+    font-family: Roboto;
+    /*font-size: 18px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;    
+    width: 90%;
+    padding-left: 1.0rem;
+    padding-top: 8px;
+}
+
+section#connexion button.btn-connexion, section#connexion a.btn-connexion {    
+    width: 100%;
+    margin: 0.5em auto;    
+    padding: 0;
+    background: linear-gradient(180deg, #0B85FC 0%, #44A8FC 100%);
+    border: transparent;
+    border-radius: 20px;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+section#connexion a.btn-connexion {
+   margin-top: 2rem; 
+}
+    
+
+/****************************************/
+/*********** inscription page ***********/
+/****************************************/
+
+/* SECTION INSCRIPTION */
+
+/* formulaire inscription */
+
+section#inscription div.inscription {
+    height: 729px;
+    width: 100%;    
+}
+
+section#inscription div.inscription {
+    filter: drop-shadow(12px 12px 24px rgba(0, 0, 0, 0.25));
+}
+
+section#inscription div.row {
+    --bs-gutter-x: 0!important;
+    /*margin-bottom: 1.5rem;*/ 
+    margin-bottom: 0.5rem;
+}
+
+section#inscription div.inscription-left {
+    width: 536px;
+    background: #0B85FC;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;    
+}
+
+section#inscription div.inscription-left h1.inscription-left-title {
+    color: white!important;
+    /*padding: 1.5rem 2rem!important;*/ 
+    padding: 3rem 2rem!important;
+}
+
+section#inscription div.inscription-right {
+    width: 744px;
+    padding: 9.75rem 2rem 4rem;
+    background: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;    
+}
+
+p.inscription-description {    
+    padding: 0px 1.5rem;
+    /*margin: -1rem 0;*/
+    /*margin: -6.5rem 0;*/
+    margin: -7rem 0;
+    color: white;    
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+div.inscription-image {
+    width: 217px;
+    height: 217px;
+    margin: 4rem auto 0;
+    /*background: url(../img/xxx.png); */  
+    /*background-color: #0B85FC;*/
+}
+
+section#inscription div.inscription div.inscription-right form {
+    margin: -3rem 0;
+}
+
+#prenom::placeholder, #nom::placeholder, #mail::placeholder, #telephone::placeholder, #domaine::placeholder, #specialite::placeholder, #titre::placeholder, #contenu::placeholder, #message_audio::placeholder, #password::placeholder, #confirm_password::placeholder {
+    color: #0B85FC;
+}
+
+section#inscription div.inscription div.inscription-right form input.form-control, section#inscription div.inscription div.inscription-right form div.form-control  {
+    color: #0B85FC!important;
+    width: 315px;
+    height: 80px;
+    border: 2px solid #0B85FC;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0px 0.555rem;
+}
+
+section#inscription div.inscription div.inscription-right form input.form-control.mail {
+    width: 650px;
+}
+
+section#inscription div.inscription div.inscription-right form div div.oeil-icone img{
+    margin: -3.5em 33em;
+}
+
+section#inscription div.inscription div.inscription-right form input.form-control.password {
+    width: 650px;
+}
+
+section#inscription a.btn-termes-et-conditions {
+    color: #0B85FC;
+    font-family: Roboto;
+    /*font-size: 18px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+section#inscription button.btn-inscription, section#inscription a.btn-inscription {    
+    width: 100%;
+    margin: 0.5em auto;    
+    padding: 0;
+    background: linear-gradient(180deg, #0B85FC 0%, #44A8FC 100%);
+    border: transparent;
+    border-radius: 20px;    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+section#inscription a.btn-inscription {
+    margin-top: 2rem;
+}
+/*
+section#inscription button.btn-inscription {
+   margin-top: 6rem;    
+}*/
+    
+section#inscription input.custom-control-input {
+    color: #0B85FC!important;
+    background-color: #0B85FC!important;
+    border: 2px solid #0B85FC!important;
+   /* box-sizing: border-box;*/
+    border-radius: 5px;    
+    margin-top: 0.5rem;
+    margin-left: 1rem;    
+}
+
+section#inscription label.custom-control-label {
+    font-family: Roboto;
+    /*font-size: 18px;*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;    
+    width: 90%;
+    padding-left: 1.5rem;
+    /*padding-top: 10px;*/
+}
+
+
+.bg-tarifs {
+    margin-top: 0 auto;
+    padding: 4em 1em;
+    /*height: 200px;*/
+    background-color: white;    
+    background-image: url(../img/RMF\ fond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+    text-align : center;
+    color: white;
+    text-shadow: 4px 2px 8px black;
+}
+
+
+/****************************************/
+/**************** FOOTER ****************/
+/****************************************/
+
+footer {
+    background:white;
+}
+
+
+footer svg {
+    vertical-align: top;
+}
+
+footer div.aftersvg {
+    background: hsla(212, 100%, 77%, 1);
+    background: linear-gradient(90deg, hsla(212, 100%, 77%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);    
+    background: -moz-linear-gradient(90deg, hsla(212, 100%, 77%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);    
+    background: -webkit-linear-gradient(90deg, hsla(212, 100%, 77%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#89C0FF", endColorstr="#0974f1", GradientType=1 );
+}
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------- TAB VERSION ----------------------- */
+/* ---------------------------------------------------------- */
+
+@media only screen and (min-width: 568px) {
+
+}
+
+
+/* ---------------------------------------------------------- */
+/* --------------------- TAB 2 VERSION ---------------------- */
+/* ---------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* ---------------------------------------------------------- */
+/* -------------------- Mini PC VERSION --------------------- */
+/* ---------------------------------------------------------- */
+
+@media only screen and (min-width: 992px) {    
+
+
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------- PC VERSION ----------------------- */
+/* ---------------------------------------------------------- */
+
+@media only screen and (min-width: 1200px) {
+    
+}
