@@ -40,7 +40,7 @@
                 </div>
             <?php endif; ?>
 
-            <p class="text-center pt-5">Formations en fonction des handicaps<br><br>
+            <p class="text-center pt-5">Toutes les formations possibles<br><br>
                 
             <table class="table">
                     <thead>
@@ -65,7 +65,7 @@
         }
         else
         {
-            ?><p class="text-center pt-5">Formations en fonction des handicaps<br><br>
+            ?><p class="text-center pt-5">Toutes les formations possibles<br><br>
     
             <table class="table">
                     <thead>
@@ -81,6 +81,7 @@
                         <td style="padding-left: 10px;"><?= $annonce->titre ?></td>               
                         <td style="padding-left: 10px;"><?= $annonce->contenu ?></td>
                         <td style="padding-left: 10px;"><?= $annonce->date_de_creation ?></td>
+                        </tr>
                     </tbody>
                     <?php endforeach; ?>
                 </table><?php 
